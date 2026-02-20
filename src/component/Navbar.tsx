@@ -84,7 +84,7 @@ function Navbar({ onOpenLogin }: { onOpenLogin: () => void }) {
         setIsOpen(false);    // 1. Close the dropdown
         onOpenLogin();       // 2. Show the modal
       }}
-      className="px-4 py-3 text-left hover:bg-neutral-100 text-red-600 font-medium w-full"
+      className="px-4 py-3 text-left md:hover:bg-neutral-100 active:bg-neutral-200 text-red-600 font-medium w-full"
     >
       Log out
     </button>
