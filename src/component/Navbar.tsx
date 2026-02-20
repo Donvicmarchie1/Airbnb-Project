@@ -3,9 +3,9 @@ import { FaAirbnb, FaSearch, FaBars} from 'react-icons/fa';
 import { BiGlobe } from 'react-icons/bi';
 import profilePicture from "../assets/images/Profile photo.png";
 
-function Navbar() {
+// Add the prop to your function definition
+function Navbar({ onOpenLogin }: { onOpenLogin: () => void }) {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
       <nav className="fixed w-full bg-white z-50 border-b py-3 px-4 md:px-10 xl:px-20 flex flex-row items-center justify-between gap-2">
         {/* 1. LOGO: Shrinks on mobile but stays visible */}
@@ -46,6 +46,10 @@ function Navbar() {
               <div className="relative w-7 h-7 md:w-8 md:h-8 rounded-full overflow-hidden shrink-0">
                 <img src={profilePicture} alt="Profile" className="w-full h-full object-cover"/>
               </div>
+              
+              
+
+
             </div>
 
             {/* Red Notification Dot */}
@@ -75,7 +79,15 @@ function Navbar() {
               {/* Section 3: Support and Logout */}
               <div className="flex flex-col py-2">
                 <div className="px-4 py-3 hover:bg-neutral-100 transition font-normal cursor-pointer">Help centre</div>
-                <div className="px-4 py-3 hover:bg-neutral-100 transition font-normal cursor-pointer border-t mt-1">Log out</div>
+                <button
+      onClick={() => {
+        setIsOpen(false);    // 1. Close the dropdown
+        onOpenLogin();       // 2. Show the modal
+      }}
+      className="px-4 py-3 text-left hover:bg-neutral-100 text-red-600 font-medium w-full"
+    >
+      Log out
+    </button>
               </div>
             </div>
           )}

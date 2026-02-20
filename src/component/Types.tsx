@@ -1,8 +1,8 @@
 export interface ListingProp {
-  id:any;
+  id:number;
   location: string;
   price: string;
-  rating: any;
+  rating: number;
   description: string;
   image: string;
 }

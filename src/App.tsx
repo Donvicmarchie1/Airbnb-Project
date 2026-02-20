@@ -1,14 +1,11 @@
-import MobileNav from './component/MobileNav';
 import AppRouter from './routes/AppRouter';
 
 function App() {
-return (
-<div className="App">
-<AppRouter />
-<MobileNav />
-
-</div>
-);
+  return (
+    <div className="App">
+      <AppRouter />
+    </div>
+  );
 }
 
 export default App;

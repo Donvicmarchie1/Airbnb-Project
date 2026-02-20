@@ -1,20 +1,19 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MainLayout from '../component/MainLayout'; // Make sure the path is correct
 import Home from '../pages/Home';
-import Navbar from '../component/Navbar';
-import CategoryBar from '../component/CategoryBar';
 
-const AppRouter = () => {
+function AppRouter() {
   return (
     <BrowserRouter>
-      {/* Both are fixed at the top, so they stay outside Routes */}
-      <Navbar />
-      <CategoryBar />
-      
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* Everything inside this Route will use the MainLayout (Navbar, Footer, etc.) */}
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          {/* Future pages like /trips would go here and automatically get the Navbar! */}
+        </Route>
       </Routes>
     </BrowserRouter>
   );
-};
+}
 
 export default AppRouter;
