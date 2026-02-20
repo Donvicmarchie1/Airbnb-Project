@@ -69,26 +69,26 @@ const Onboarding = ({ onClose }: OnboardingProps) => {
 
           {/* Divider */}
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-[1px] bg-neutral-300 flex-1" />
+            <div className="h-px bg-neutral-300 flex-1" />
             <span className="text-xs text-neutral-500 font-normal">or</span>
-            <div className="h-[1px] bg-neutral-300 flex-1" />
+            <div className="h-px bg-neutral-300 flex-1" />
           </div>
 
           {/* Social Buttons */}
           <div className="flex flex-col gap-4">
-            <button onClick={onClose} className="w-full border-[1.2px] border-neutral-800 py-[10px] rounded-lg flex items-center px-6 hover:bg-neutral-100 transition font-semibold text-sm">
+            <button onClick={onClose} className="w-full border-[1.2px] border-neutral-800 py-2.5 rounded-lg flex items-center px-6 hover:bg-neutral-100 transition font-semibold text-sm">
               <FaFacebook size={20} className="text-[#1877F2]" />
               <span className="flex-1 text-center">Continue with Facebook</span>
             </button>
-            <button onClick={onClose} className="w-full border-[1.2px] border-neutral-800 py-[10px] rounded-lg flex items-center px-6 hover:bg-neutral-100 transition font-semibold text-sm">
+            <button onClick={onClose} className="w-full border-[1.2px] border-neutral-800 py-2.5 rounded-lg flex items-center px-6 hover:bg-neutral-100 transition font-semibold text-sm">
               <FaGoogle size={20} />
               <span className="flex-1 text-center">Continue with Google</span>
             </button>
-            <button onClick={onClose} className="w-full border-[1.2px] border-neutral-800 py-[10px] rounded-lg flex items-center px-6 hover:bg-neutral-100 transition font-semibold text-sm">
+            <button onClick={onClose} className="w-full border-[1.2px] border-neutral-800 py-2.5 rounded-lg flex items-center px-6 hover:bg-neutral-100 transition font-semibold text-sm">
               <FaApple size={20} className="text-black" />
               <span className="flex-1 text-center">Continue with Apple</span>
             </button>
-            <button onClick={onClose} className="w-full border-[1.2px] border-neutral-800 py-[10px] rounded-lg flex items-center px-6 hover:bg-neutral-100 transition font-semibold text-sm">
+            <button onClick={onClose} className="w-full border-[1.2px] border-neutral-800 py-2.5 rounded-lg flex items-center px-6 hover:bg-neutral-100 transition font-semibold text-sm">
               <MdOutlineEmail size={20} className="text-black" />
               <span className="flex-1 text-center">Continue with email</span>
             </button>
