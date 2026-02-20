@@ -5,4 +5,5 @@ export interface ListingProp {
   rating: number;
   description: string;
   image: string;
+  date: string
 }

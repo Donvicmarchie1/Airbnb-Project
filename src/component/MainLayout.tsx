@@ -10,7 +10,7 @@ function MainLayout() {
 
   return (
     <div className="relative min-h-screen flex flex-col">
-      {/* Pass the function to open the modal to the Navbar */}
+      {/* Passed the function to open the modal to the Navbar */}
       <Navbar onOpenLogin={() => setShowModal(true)} />
 
       <main className="flex-grow">

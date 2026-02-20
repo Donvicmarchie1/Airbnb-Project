@@ -1,9 +1,9 @@
 import { AiFillHeart, AiOutlineHeart, AiFillStar } from 'react-icons/ai';
-import { useToggle } from '../hooks/useToggle'; // Adjust path if needed
+import { useToggle } from '../hooks/useToggle';
 import type { ListingProp } from './Types';
 
-function ListingCard({ location, price, rating, image, description }: ListingProp) {
-  // Using your custom hook instead of raw useState
+function ListingCard({ location, date, price, rating, image, description }: ListingProp) {
+  // my custom hook
   const [isFavorite, toggleFavorite] = useToggle(false);
 
   return (
@@ -20,14 +20,14 @@ function ListingCard({ location, price, rating, image, description }: ListingPro
           <div 
             onClick={(e) => {
               e.stopPropagation();
-              toggleFavorite(); // Calling the function from your custom hook
+              toggleFavorite(); // Calling the function from the custom hook
             }}
             className="absolute top-3 right-3 transition hover:scale-110 cursor-pointer"
           >
             {isFavorite ? (
               <AiFillHeart size={28} className="text-[#ff385c]" />
             ) : (
-              <AiOutlineHeart size={28} className="text-white drop-shadow-md" />
+              <AiOutlineHeart size={28} className="text-gray-500 drop-shadow-md" />
             )}
           </div>
         </div>
@@ -42,11 +42,15 @@ function ListingCard({ location, price, rating, image, description }: ListingPro
         </div>
         
         {/* DESCRIPTION */}
-        <div className="font-light text-neutral-500 text-sm line-clamp-1">
+        <div className="font-light text-neutral-500 text-sm lin">
           {description}
         </div>
 
-        {/* PRICE WITH UNDERLINE FIX */}
+        <div className="font-light text-neutral-500 text-sm lin">
+          {date}
+        </div>
+
+        {/* PRICE WITH UNDERLINE */}
         <div className="mt-1 flex items-baseline">
           <div className="border-b border-black pb-px hover:border-black/70 cursor-pointer transition">
             <span className="font-bold text-[#222222]">£{price}</span>

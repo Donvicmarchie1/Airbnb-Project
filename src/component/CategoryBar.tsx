@@ -14,13 +14,11 @@ import boats from "../assets/icons/boats.svg"
 import lakeFront from "../assets/icons/lakefront.svg"
 import treeHouses from "../assets/icons/treehouses.svg"
 
-
-// Add all your imports here (amazingViews, cabins, etc.)
-
-// We turn the custom SVG into a component function so it matches the React Icons
+// turned the custom SVG into a component function so it matches the React Icons
 const categories = [
   {label: 'Amazing views', 
     icon: () => <img src={amazingViews} alt="Amazing Views" className="w-6 h-6" /> },
+    
   {label: 'Cabins',
      icon: () => <img src={cabins} alt="Cabins" className="w-6 h-6" /> },
 
@@ -61,6 +59,7 @@ function CategoryBar() {
   const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
 
   return (
+    //for embla carosel
     <div className="fixed w-full bg-white z-40 top-20 border-b px-4 md:px-10 xl:px-20 py-2 flex items-center gap-4">
       <button onClick={scrollPrev} className="p-1 border border-neutral-300 rounded-full hover:shadow-md bg-white">
         <MdOutlineChevronLeft size={24} />

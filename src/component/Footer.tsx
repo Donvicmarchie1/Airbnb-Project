@@ -41,7 +41,7 @@ function Footer() {
         </div>
       </div>
 
-      {/* 2. MAIN FOOTER DIRECTORY */}
+      {/* 2. MAIN FOOTEr */}
       <div className="py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <h3 className="font-semibold mb-4">Support</h3>

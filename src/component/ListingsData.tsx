@@ -26,8 +26,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`, 
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct", 
     image: halfMoon
   },
 
@@ -36,8 +36,8 @@ export const listings: ListingProp[] = [
  location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,  
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",  
     image: halfMoon2
   },
 
@@ -46,8 +46,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`, 
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct", 
     image: halfMoon3
   },
 
@@ -56,8 +56,8 @@ export const listings: ListingProp[] = [
    location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,  
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",  
     image: halfMoon4
   },
   { 
@@ -65,8 +65,8 @@ export const listings: ListingProp[] = [
  location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,  
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",  
     image: halfMoon5
   },
 
@@ -75,8 +75,8 @@ export const listings: ListingProp[] = [
   location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`, 
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct", 
     image: halfMoon6
   },
 
@@ -85,8 +85,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,  
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",  
     image: halfMoon7
   },
 
@@ -95,8 +95,8 @@ export const listings: ListingProp[] = [
    location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`, 
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct", 
     image: halfMoon8
   },
 
@@ -105,8 +105,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`, 
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct", 
     image: halfMoon9
   },
 
@@ -115,8 +115,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`, 
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct", 
     image: halfMoon10
   },
 
@@ -125,8 +125,8 @@ export const listings: ListingProp[] = [
   location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`, 
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct", 
     image: halfMoon11
   },
 
@@ -135,8 +135,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,  
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",  
     image: halfMoon12
   },
 
@@ -145,8 +145,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,  
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",  
     image: halfMoon13
   },
 
@@ -155,8 +155,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,  
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",  
     image: halfMoon14
   },
 
@@ -165,8 +165,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",
     image: halfMoon15
   },
 
@@ -175,8 +175,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`, 
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct", 
     image: halfMoon16
   },
 
@@ -185,8 +185,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,  
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",  
     image: halfMoon17
   },
 
@@ -195,8 +195,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,  
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",  
     image: halfMoon18
   },
 
@@ -205,8 +205,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`,  
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct",  
     image: halfMoon19
   },
 
@@ -215,8 +215,8 @@ export const listings: ListingProp[] = [
     location: "Half Moon Bay, California, US", 
     price: "1,634", 
     rating: 5.0, 
-    description: `Beach and ocean views
-22–27 Oct • Individual host`, 
+    description: `Beach and ocean views • Individual host`,
+date: "22-27 Oct", 
     image: halfMoon20
    }
   ]

@@ -2,20 +2,20 @@ import { IoClose, IoChevronDown } from 'react-icons/io5';
 import { FaFacebook, FaApple, FaGoogle } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 
-// Fixed the TypeScript error from your screenshot by defining the prop type
+// TypeScript type
 interface OnboardingProps {
   onClose: () => void;
 }
 
 const Onboarding = ({ onClose }: OnboardingProps) => {
   return (
-    // Backdrop: Added 'py-8' and 'sm:py-12' to ensure it never touches the top/bottom edges
+    
     <div className="fixed inset-0 z-200 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 py-8 sm:py-12">
       
-      {/* Modal Container: Added 'max-h-full' and 'overflow-y-auto' so it fits smaller screens */}
+      {/* Modal Container: */}
       <div className="bg-white rounded-xl w-full max-w-142 max-h-full overflow-y-auto shadow-2xl animate-in fade-in zoom-in duration-300 relative">
         
-        {/* Header Section: Sticky so it stays visible while scrolling content */}
+        {/* Header Section:*/}
         <div className="sticky top-0 bg-white z-10 border-b py-4 flex items-center justify-center">
           <button 
             onClick={onClose}

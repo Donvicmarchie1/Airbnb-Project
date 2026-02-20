@@ -3,18 +3,18 @@ import { FaAirbnb, FaSearch, FaBars} from 'react-icons/fa';
 import { BiGlobe } from 'react-icons/bi';
 import profilePicture from "../assets/images/Profile photo.png";
 
-// Add the prop to your function definition
 function Navbar({ onOpenLogin }: { onOpenLogin: () => void }) {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
       <nav className="fixed w-full bg-white z-50 border-b py-3 px-4 md:px-10 xl:px-20 flex flex-row items-center justify-between gap-2">
-        {/* 1. LOGO: Shrinks on mobile but stays visible */}
+        {/* 1. LOGO */}
         <div className="flex items-center gap-1 text-[#ff385c] font-bold text-xl md:text-2xl cursor-pointer shrink-0">
           <FaAirbnb size={28} className="md:size-8" />
           <span className="hidden lg:block">airbnb</span>
         </div>
 
-        {/* 2. SEARCH BAR: Responsive widths */}
+        {/* 2. SEARCH BAR*/}
         <div className="flex-1 md:flex-none border rounded-full py-2 px-3 md:px-4 shadow-sm hover:shadow-md transition cursor-pointer flex flex-row items-center justify-between gap-2 text-xs md:text-sm min-w-0">
           <div className="flex flex-col md:flex-row items-start md:items-center truncate px-1">
             <span className="font-semibold truncate">Anywhere</span>
@@ -28,7 +28,7 @@ function Navbar({ onOpenLogin }: { onOpenLogin: () => void }) {
           </div>
         </div>
 
-        {/* 3. USER MENU: Now stays visible on Mobile */}
+        {/* 3. USER MENU */}
         <div className="flex flex-row items-center gap-1 md:gap-2 shrink-0">
           <div className="hidden md:block text-[14px] font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 cursor-pointer">
             Airbnb your home
@@ -56,7 +56,7 @@ function Navbar({ onOpenLogin }: { onOpenLogin: () => void }) {
               <div className="absolute -top-0.5 -right-0.5 bg-[#ff385c] w-3 h-3 rounded-full border-2 border-white">
               </div>
 
-            {/* THE UPDATED DROPDOWN MENU */}
+            {/* DROPDOWN MENU */}
           {isOpen && (
             <div className="absolute right-0 top-12 w-60 bg-white rounded-xl shadow-[0_3px_12px_rgba(0,0,0,0.15)] border border-neutral-100 overflow-hidden text-sm flex flex-col z-50">
               {/* Section 1: Bold items */}
@@ -84,7 +84,7 @@ function Navbar({ onOpenLogin }: { onOpenLogin: () => void }) {
         setIsOpen(false);    // 1. Close the dropdown
         onOpenLogin();       // 2. Show the modal
       }}
-      className="px-4 py-3 text-left md:hover:bg-neutral-100 active:bg-neutral-200 text-red-600 font-medium w-full"
+      className="px-4 py-3 text-left hover:bg-neutral-100 text-red-600 font-medium w-full"
     >
       Log out
     </button>
